@@ -31,7 +31,7 @@ docker start {container_id}
 
 ##### Create a alias
 ```bash
-nano ~/.bash_aliases >> alias macos='docker start {container_id}'
+echo -e "\nalias macos='docker start {container_id}'" >> ~/.bash_aliases
 ```
 So, to start the container type ```macos``` on terminal
 
