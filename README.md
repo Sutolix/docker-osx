@@ -1,4 +1,4 @@
-#### Create container
+### Create container
 
 ```bash
 SHARE=/home/$USER/Documentos/Mac
@@ -24,7 +24,7 @@ sudo -S mount_9p hostshare
 ```
 <br>
 
-#### Start container
+### Start container
 ```bash
 docker start {container_id}
 ```
@@ -37,7 +37,7 @@ So, to start the container type ```macos``` on terminal
 
 <br>
 
-#### Optimizations
+### Optimizations
 
 ##### Disable spotlight indexing 
 ```bash
