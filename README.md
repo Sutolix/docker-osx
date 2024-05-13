@@ -15,7 +15,7 @@ docker run -it \
     -e MASTER_PLIST_URL='https://raw.githubusercontent.com/sickcodes/osx-serial-generator/master/config-custom-sonoma.plist' \
     -e RAM=8 \
     -e CORES=4 \
-    sickcodes/docker-osx:latest
+    sickcodes/docker-osx:sonoma
 ```
 
 ##### Open Terminal inside macOS and run the following command to mount the virtual file system
