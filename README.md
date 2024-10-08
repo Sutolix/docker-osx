@@ -18,6 +18,24 @@ docker run -it \
     sickcodes/docker-osx:sonoma
 ```
 
+```bash
+SHARE=/home/$USER/Documentos/Mac
+
+sudo docker run -it \
+    --device /dev/kvm \
+    -p 50922:10022 \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -v "${SHARE}:/mnt/hostshare" \
+    -e "DISPLAY=${DISPLAY:-:0.0}" \
+    -e GENERATE_UNIQUE=true \
+    -e CPU='Haswell-noTSX' \
+    -e CPUID_FLAGS='kvm=on,vendor=GenuineIntel,+invtsc,vmware-cpuid-freq=on' \
+    -e MASTER_PLIST_URL='https://raw.githubusercontent.com/sickcodes/osx-serial-generator/master/config-custom.plist' \
+    -e RAM=8 \
+    -e CORES=4 \
+    seraphix/docker-osx:sonoma
+```
+
 ##### Open Terminal inside macOS and run the following command to mount the virtual file system
 ```bash
 sudo -S mount_9p hostshare
