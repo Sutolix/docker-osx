@@ -1,6 +1,6 @@
 ### Create container
 
-(antigo)
+(old)
 ```bash
 SHARE=/home/$USER/Documentos/Mac
 
@@ -19,7 +19,7 @@ docker run -it \
     sickcodes/docker-osx:sonoma
 ```
 
-(novo)
+(new)
 ```bash
 SHARE=/home/$USER/Documentos/Mac
 
